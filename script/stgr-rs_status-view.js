@@ -30,7 +30,7 @@
   const st_new = (str = 0, mag = 0, agi = 0, vit = 0, dex = 0, mnt = 0) => {
     return {"STR": str, "MAG": mag, "AGI": agi, "VIT": vit, "DEX": dex, "MNT": mnt};
   };
-  const zukanLv = [0, 0.05, 0.15, 0.2, 0.25, 0.35, 0.4, 0.5, 0.65];//400
+  const zukanLv = [0, 0.05, 0.15, 0.2, 0.25, 0.35, 0.4, 0.5, 0.65, 1];//450
   const Niwa = {};
   Niwa.getId = function(text) {
     const r = text.split(/(\d+)\s/);
@@ -106,7 +106,7 @@
       d.classList.add("cdatal");
       d.style.float = "left";
       d.style.marginTop = "20px";
-      d.innerHTML = `<span class="markp marki2">詳細ステータス</span><br><hr class="dashline"><div style="padding: 5px;">${a}<br>※果実は含まれません。<br>※花図鑑Lv400まで対応。<br><hr class="dashline"><details><summary style="color:#aa4433;cursor:pointer;">取得データ</summary><span style="font-size:80%">${json}</span></details></div>`;
+      d.innerHTML = `<span class="markp marki2">詳細ステータス</span><br><hr class="dashline"><div style="padding: 5px;">${a}<br>※果実は含まれません。<br>※花図鑑Lv450まで対応。<br><hr class="dashline"><details><summary style="color:#aa4433;cursor:pointer;">取得データ</summary><span style="font-size:80%">${json}</span></details></div>`;
       document.getElementsByClassName("cdatal")[1].after(d);
     });
   };
